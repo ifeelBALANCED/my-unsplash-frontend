@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    [
+      "effector-logger/babel-plugin",
+      {
+        "inspector": true,
+        "effector": {
+          "reactSsr": false,
+          "factories": ["shared/lib/effector-timer", "effector-forms"]
+        }
+      }
+    ]
+  ]
+}
