@@ -1,11 +1,11 @@
 {
   "name": "my-unsplash-frontend",
   "version": "0.1.0",
+  "license": "MIT",
   "author": {
     "name": "MRX",
     "url": "https://github.com/mmnkuh"
   },
-  "license": "MIT",
   "scripts": {
     "build": "npm run typecheck && vite build",
     "commit": "git-cz",
@@ -41,6 +41,8 @@
     "@chakra-ui/react": "^1.8.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.27.2",
     "effector": "^22.1.2",
     "effector-inspector": "^0.8.1",
     "effector-logger": "^0.13.3",
