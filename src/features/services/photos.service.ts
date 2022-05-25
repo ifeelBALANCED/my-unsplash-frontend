@@ -10,6 +10,13 @@ export const $createPhotoFx = async (data: AddFormValues) => {
   });
 };
 
+export const $deletePhotoFx = async (id: number) => {
+  return await request<PhotoEntity>({
+    method: "delete",
+    url: `/photo/${id}`,
+  });
+};
+
 export const $getAllPhotosFx = async () => {
   return await request<PhotoEntity[]>({
     method: "get",
@@ -20,4 +27,5 @@ export const $getAllPhotosFx = async () => {
 export const PhotosService = {
   $createPhotoFx,
   $getAllPhotosFx,
+  $deletePhotoFx,
 };

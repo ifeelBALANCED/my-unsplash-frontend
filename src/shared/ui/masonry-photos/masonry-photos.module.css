@@ -1,0 +1,70 @@
+.imageWrapper {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imageImage {
+  width: 100%;
+  border-radius: 24px;
+  display: inline-block;
+}
+
+.imageOverlay {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.38);
+  border-radius: 24px;
+}
+
+.imageWrapper:hover .imageOverlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.deleteButton {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  left: 180px;
+  width: 63px;
+  height: 23px;
+  border: 1px solid #eb5757;
+  border-radius: 38px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: lowercase;
+  color: #eb5757;
+  outline: none;
+}
+
+.deleteButton:hover {
+  background: #eb5757;
+  color: #fff;
+}
