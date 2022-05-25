@@ -14,7 +14,7 @@ export const instance = axios.create({
 export const request = <T = void>(
   options: types.HttpRequestOptions,
   params?: types.AnyObject
-): Promise<T | void> => {
+): Promise<T extends void ? void : T> => {
   return instance
     .request({
       url: options.url,
