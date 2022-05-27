@@ -4,3 +4,7 @@ export type PhotoEntity = {
   photoUrl: string;
   password?: string;
 };
+
+export type GetPhotosParams = {
+  label?: string;
+};

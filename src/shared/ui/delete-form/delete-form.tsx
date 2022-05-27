@@ -18,7 +18,7 @@ import { useForm } from "react-hook-form";
 import { PhotoEntity } from "@/app/types";
 import { PhotosService } from "@/features/services/photos.service";
 import { $deleteRequestInfo } from "@/shared/api/photos";
-import { $submitForm } from "@/shared/api/photos/events";
+import { submitForm } from "@/shared/api/photos/events";
 import { deleteFormSchema } from "@/shared/ui/delete-form/schema/delete-form.schema";
 import FieldPassword from "@/shared/ui/react-hook-form/FormPassword";
 
@@ -65,7 +65,7 @@ export const DeleteForm = ({ onClose, $photo }: DeleteFormProps) => {
         isClosable: true,
       });
       onClose();
-      $submitForm();
+      submitForm();
     }
   };
 
