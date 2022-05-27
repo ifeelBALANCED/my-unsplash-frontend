@@ -78,7 +78,7 @@ export const DeleteForm = ({ onClose, $photo }: DeleteFormProps) => {
             <Badge colorScheme="purple" fontSize="medium">
               {$photo?.password}
             </Badge>
-            <Button ml={2} onClick={onCopy}>
+            <Button ml={2} size="sm" onClick={onCopy}>
               {hasCopied ? "Copied" : "Copy"}
             </Button>
           </Box>
