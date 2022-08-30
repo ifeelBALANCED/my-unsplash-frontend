@@ -97,6 +97,6 @@
     "start-server-and-test": "^1.14.0",
     "ts-jest": "^27.1.2",
     "typescript": "^4.5.4",
-    "vite": "^2.7.4"
+    "vite": "^2.9.13"
   }
 }
